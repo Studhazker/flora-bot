@@ -1,7 +1,33 @@
-# Ignore environment variables
+# Environment variables
 .env
+.env.local
+.env.*.local
+
+# Python cache
 __pycache__
 *.pyc
-*.db  # если есть локальная БД
-*.log
+*.pyo
+*.pyd
+*.pyc
+
+# Databases
+*.sqlite
+*.db
+
+# Virtual environments
 venv/
+env/
+.virtualenv/
+
+# Logs
+*.log
+nohup.out
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
