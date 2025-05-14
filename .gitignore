@@ -1,0 +1,7 @@
+# Ignore environment variables
+.env
+__pycache__
+*.pyc
+*.db  # если есть локальная БД
+*.log
+venv/
