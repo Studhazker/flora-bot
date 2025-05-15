@@ -1,0 +1,79 @@
+/* Общие стили */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fff0;
+    color: #2d2d2d;
+}
+
+/* Заголовки */
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+/* Таблица */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #4CAF50 !important;
+    color: white;
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background-color: #e8f5e9;
+    transition: all 0.2s ease-in-out;
+}
+
+.badge {
+    font-size: 1rem;
+    padding: 0.5em 0.7em;
+}
+
+.btn-group .btn {
+    font-size: 0.85rem;
+    margin: 2px;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .table td:nth-child(1):before { content: "ID"; }
+    .table td:nth-child(2):before { content: "Цветы"; }
+    .table td:nth-child(3):before { content: "Кол-во"; }
+    .table td:nth-child(4):before { content: "Упаковка"; }
+    .table td:nth-child(5):before { content: "Сумма"; }
+    .table td:nth-child(6):before { content: "Пользователь"; }
+    .table td:nth-child(7):before { content: "Статус"; }
+    .table td:nth-child(8):before { content: "Действия"; }
+
+    .table td::before {
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table td {
+        padding: 0.75rem 0.5rem;
+        position: relative;
+    }
+}

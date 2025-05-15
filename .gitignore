@@ -2,7 +2,7 @@
 .env
 .env.local
 .env.*.local
-
+inf_to_serv.txt
 # Python cache
 __pycache__
 *.pyc
